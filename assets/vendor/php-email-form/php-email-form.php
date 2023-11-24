@@ -506,7 +506,7 @@ class PHPMailer
      *
      * @var string
      */
-    public $Host = 'localhost';
+    public $Host = 'astraplaneti-1.github.io';
 
     /**
      * The default SMTP server port.
@@ -2344,7 +2344,7 @@ class PHPMailer
         $this->smtp->setDebugOutput($this->Debugoutput);
         $this->smtp->setVerp($this->do_verp);
         if ($this->Host === null) {
-            $this->Host = 'localhost';
+            $this->Host = 'astraplaneti-1.github.io';
         }
         $hosts = explode(';', $this->Host);
         $lastexception = null;
