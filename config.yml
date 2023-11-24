@@ -1,1 +1,9 @@
-theme: minima
+# Site settings
+title: Great New Blog Title
+author:
+  name: Lucas Rus
+  email: lucas.rus.dojo@gmail.com
+description: "Great site about Jekyll on GH-Pages."
+
+# Build settings
+remote_theme: jekyll/minima
