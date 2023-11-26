@@ -463,7 +463,7 @@ class PHPMailer
     public $ConfirmReadingTo = '';
 
     /**
-     * The  to use in the Message-ID header and ashostname default HELO string.
+     * The hostname to use in the Message-ID header and as default HELO string.
      * If empty, PHPMailer attempts to find one with, in order,
      * $_SERVER['SERVER_NAME'], gethostname(), php_uname('n'), or the value
      * 'localhost.localdomain'.
@@ -472,7 +472,7 @@ class PHPMailer
      *
      * @var string
      */
-    public $Hostname = 'astraplaneti-1.github.io';
+    public $Hostname = '';
 
     /**
      * An ID to be used in the Message-ID header.
@@ -506,7 +506,7 @@ class PHPMailer
      *
      * @var string
      */
-    public $Host = 'astraplaneti-1.github.io';
+    public $Host = 'localhost';
 
     /**
      * The default SMTP server port.
@@ -2344,7 +2344,7 @@ class PHPMailer
         $this->smtp->setDebugOutput($this->Debugoutput);
         $this->smtp->setVerp($this->do_verp);
         if ($this->Host === null) {
-            $this->Host = 'astraplaneti-1.github.io';
+            $this->Host = 'localhost';
         }
         $hosts = explode(';', $this->Host);
         $lastexception = null;

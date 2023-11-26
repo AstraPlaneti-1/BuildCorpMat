@@ -45,9 +45,9 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>BUILDCORPMAT<span>.</span></h1>
+        
+        <img src="assets/img/android-chrome-192x192.png" alt="">
+        <h1>BuildCorpMat<span>.</span></h1>
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -55,8 +55,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html" >Acasa</a></li>
-          <li><a href="about.html">Termeni si conditii</a></li>
-          <li><a href="services.html">Produse</a></li>
+          <li><a href="about.html">Produse</a></li>
+          <li><a href="service-details.html">Servicii</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -121,7 +121,7 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-lg-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Pepsi" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="col-lg-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
@@ -150,58 +150,43 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer  id="footer" class="footer">
+  <footer id="footer" class="footer">
 
-    <div style="margin-top:10" class="footer-content position-relative align-content-center">
+    <div class="footer-content position-relative">
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-info text-center">
-              <h4>Informatii</h3>
+          <div class="col-lg-5 col-md-6">
+            <div class="footer-info">
+              <h3>Buildcorpmat</h3>
               <p>
-                <strong>Adresa:</strong>Giarmata, județul Timiș Calea Lipovei, KM1<br>
-                <strong>Telefon:</strong> 0733 390 602 sau 0730 226 826<br>
+                Giarmata, județul Timiș Calea Lipovei, KM1<br><br>
+                <strong>Phone:</strong> 0733 390 602 sau 0730 226 826 <br>
                 <strong>Email:</strong> buildcorpmat@gmail.com<br>
               </p>
-              
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
             </div>
           </div><!-- End footer info column-->
-
-          <div class="col-lg-4 col-md-6 align-items-center">
-            <div class="footer-info text-center">
-              <h3 ><br><br>BUILDCORPMAT</h3>
-              
-            </div>
-            <div class="social-links d-flex mt-3 justify-content-center">
-              <a href="https://www.facebook.com/buildcorpmat" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
-            </div>
+          <div class="col-lg-2 col-md-3 d-flex justify-content-center">
+                <img style="height:320px;width:320px;" src="assets/img/android-chrome-512x512.png" alt=""> 
           </div>
-          <div class="col-lg-4 col-md-3 footer-links text-center">
-            <h4>Pagini Utile</h4>
-            <div class="row">
-              <div class="col-lg-4 col-md-3 footer-links">
-                <ul>
-                  <li><a href="#">Acasa</a></li>
-                  <li><a href="#">Produse</a></li>
-                  
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-3 footer-links text-center">
-                <ul>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">ANPC</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-5 col-md-3 footer-links">
-                <ul>
-                  <li><a href="#">Termeni si conditiții</a></li>
-                  <li><a href="#">Politica de Cookies</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
+          <div class="col-lg-5 col-md-3 footer-links text-end">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Acasa</a></li>
+              <li><a href="#">Produse</a></li>
+              <li><a href="Service-details/projPers.html">Servicii</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="about.html">Termeni si conditii</a></li>
+              <li><a href="cookiePolicy.html">Politica de Cookies</a></li>
+              <li><a href="#">ANPC</a></li>
+            </ul>
+          </div><!-- End footer links column-->
         </div>
       </div>
     </div>
@@ -209,8 +194,9 @@
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>PEPSI</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>BuildCorpMat</span></strong>. All Rights Reserved
         </div>
+        
       </div>
     </div>
 
