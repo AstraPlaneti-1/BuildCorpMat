@@ -60,6 +60,37 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
+.dot {
+  content: "\2022";
+  color: black;
+  font-size: 1.5em;
+  margin-right: 7em;
+}
+.custom-list {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+.custom-list i{
+  position: relative;
+  font-size: 1.5em;
+  margin-right: 7em;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.custom-list li::before {
+  content: "\2022";
+  color: black;
+  font-size: 1.5em;
+  position: absolute;
+  left: -0.5em;
+  top: 0%;
+  transform: translateY(0%);
+}
 section {
   padding: 80px 0;
   overflow: hidden;
@@ -248,7 +279,7 @@ section {
 .header {
   z-index: 997;
   position: absolute;
-  padding: 15px 0;
+  padding: 0px 0;
   top: 0;
   left: 0;
   right: 0;
@@ -680,11 +711,22 @@ section {
   border-radius: 0;
 }
 
+@media(max-width: 1200px)
+{
+  .constructions .card-item .card-bg {
+    min-height: 25rem;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .constructions .card-item .card-bg {
-  min-height: 270px;
+  min-height: 15.6rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 
 .constructions .card-item .card-body {
@@ -1174,6 +1216,9 @@ section {
   font-family: var(--font-secondary);
   margin: 30px 0;
 }
+.about p {
+  font-size: 18px;
+}
 
 @media (min-width: 991px) {
   .about h2 {
@@ -1183,7 +1228,7 @@ section {
 }
 
 .about .our-story {
-  padding: 20px;
+  padding: 40px;
   background-color: #f5f6f7;
 }
 
@@ -1212,12 +1257,13 @@ section {
 
 .about ul {
   list-style: none;
-  padding: 0;
-  font-size: 15px;
+  padding: 0 0 0 50px;
+  font-size: 18px;
 }
 
 .about ul li {
-  padding: 5px 0;
+  padding: 5px 0 0 5px;
+  font-size: 18px;
   display: flex;
   align-items: center;
 }
@@ -1288,6 +1334,14 @@ section {
   font-family: var(--font-primary);
   font-size: 14px;
 }
+
+@media( min-width: 300px)
+{
+  .stats-counter .stats-item p {
+    display: inline;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Our Team Section
@@ -1786,7 +1840,7 @@ section {
 }
 
 .recent-blog-posts .post-item .post-title {
-  font-size: 24px;
+  font-size: 28px;
   color: var(--color-secondary);
   font-weight: 700;
   transition: 0.3s;
@@ -1848,6 +1902,9 @@ section {
   position: relative;
 }
 
+.hero p {
+  font-size: 0.5rem; /* Adjust the font size for smaller screens */
+}
 .hero .carousel-item {
   position: absolute;
   inset: 0;
@@ -1872,17 +1929,11 @@ section {
   z-index: 2;
 }
 
-@media (max-width: 768px) {
-  .hero .info {
-    padding: 0 50px;
-  }
-}
-
 .hero .info h2 {
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 56px;
+  font-size: 4rem;
   font-weight: 700;
   position: relative;
 }
@@ -1900,9 +1951,22 @@ section {
   margin: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .hero .info h2 {
     font-size: 36px;
+  }
+  .hero .info h2, p, a {
+    display: none;
+  }
+}
+
+.hero .info .disappear{font-size:16px;}
+
+@media (max-width: 768px)
+{
+  .hero .info .disappear
+  {
+    display: none;
   }
 }
 
@@ -2048,7 +2112,7 @@ section {
 }
 
 .blog .posts-list .post-title {
-  font-size: 24px;
+  font-size: 28px;
   color: var(--color-secondary);
   font-weight: 700;
   transition: 0.3s;
