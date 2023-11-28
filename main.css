@@ -133,10 +133,28 @@ section {
   color: #fff;
   font-family: var(--font-secondary);
 }
+.breadcrumbs h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+@media(min-width="300px")
+{
+.breadcrumbs ol li {
+  display: inline;
+}
+.breadcrumbs ol a {
+  display: inline-block;
+}
+}
 
 .breadcrumbs ol {
   display: flex;
+  white-space: nowrap;
+  overflow: auto;
   flex-wrap: wrap;
+  gap: 10px; 
   list-style: none;
   padding: 0 0 10px 0;
   margin: 0;
@@ -148,6 +166,16 @@ section {
 .breadcrumbs ol a {
   color: rgba(255, 255, 255, 0.8);
   transition: 0.3s;
+}
+
+.breadcrumbs li {
+  font-size: 16px;
+  display: inline;
+  margin-right: 10px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs ol a:hover {
@@ -1783,7 +1811,7 @@ section {
 }
 
 .recent-blog-posts .post-item .post-content {
-  padding: 30px;
+  padding: 15px;
 }
 
 .recent-blog-posts .post-item .post-title {
@@ -2104,16 +2132,28 @@ section {
 --------------------------------------------------------------*/
 .blog .blog-details {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.blog h3 {
+  color:#d5d7da
 }
 
 .blog .blog-details .post-img {
   margin: -30px -30px 20px -30px;
+  max-width: 100%;
+  height: auto;
+  display: block; /* This eliminates extra space below the image */
+  margin: auto;
   overflow: hidden;
 }
 
 .blog .blog-details .title {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   padding: 0;
   margin: 20px 0 0 0;

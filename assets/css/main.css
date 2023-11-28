@@ -60,37 +60,6 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
-.dot {
-  content: "\2022";
-  color: black;
-  font-size: 1.5em;
-  margin-right: 7em;
-}
-.custom-list {
-  list-style: none;
-  padding-left: 1.5em;
-}
-
-.custom-list i{
-  position: relative;
-  font-size: 1.5em;
-  margin-right: 7em;
-}
-
-.custom-list li {
-  position: relative;
-  padding-left: 1.5em;
-}
-
-.custom-list li::before {
-  content: "\2022";
-  color: black;
-  font-size: 1.5em;
-  position: absolute;
-  left: -0.5em;
-  top: 0%;
-  transform: translateY(0%);
-}
 section {
   padding: 80px 0;
   overflow: hidden;
@@ -164,10 +133,28 @@ section {
   color: #fff;
   font-family: var(--font-secondary);
 }
+.breadcrumbs h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+@media(min-width="300px")
+{
+.breadcrumbs ol li {
+  display: inline;
+}
+.breadcrumbs ol a {
+  display: inline-block;
+}
+}
 
 .breadcrumbs ol {
   display: flex;
+  white-space: nowrap;
+  overflow: auto;
   flex-wrap: wrap;
+  gap: 10px; 
   list-style: none;
   padding: 0 0 10px 0;
   margin: 0;
@@ -179,6 +166,16 @@ section {
 .breadcrumbs ol a {
   color: rgba(255, 255, 255, 0.8);
   transition: 0.3s;
+}
+
+.breadcrumbs li {
+  font-size: 16px;
+  display: inline;
+  margin-right: 10px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
 }
 
 .breadcrumbs ol a:hover {
@@ -279,7 +276,7 @@ section {
 .header {
   z-index: 997;
   position: absolute;
-  padding: 0px 0;
+  padding: 15px 0;
   top: 0;
   left: 0;
   right: 0;
@@ -709,24 +706,17 @@ section {
   background: #fff;
   position: relative;
   border-radius: 0;
-}
-
-@media(max-width: 1200px)
-{
-  .constructions .card-item .card-bg {
-    min-height: 25rem;
-    max-width: 100%;
-    height: auto;
-  }
+  margin-bottom:20px;
 }
 
 .constructions .card-item .card-bg {
-  min-height: 15.6rem;
+  min-height: 270px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  width:100%;
+  height:auto;
 }
 
 .constructions .card-item .card-body {
@@ -1216,9 +1206,6 @@ section {
   font-family: var(--font-secondary);
   margin: 30px 0;
 }
-.about p {
-  font-size: 18px;
-}
 
 @media (min-width: 991px) {
   .about h2 {
@@ -1232,9 +1219,9 @@ section {
   background-color: #f5f6f7;
 }
 
-@media (min-width: 3000px) {
+@media (min-width: 991px) {
   .about .our-story {
-    padding-right: 0%;
+    padding-right: 5%;
   }
 }
 
@@ -1257,13 +1244,12 @@ section {
 
 .about ul {
   list-style: none;
-  padding: 0 0 0 50px;
-  font-size: 18px;
+  padding: 0;
+  font-size: 15px;
 }
 
 .about ul li {
-  padding: 5px 0 0 5px;
-  font-size: 18px;
+  padding: 5px 0;
   display: flex;
   align-items: center;
 }
@@ -1335,13 +1321,12 @@ section {
   font-size: 14px;
 }
 
-@media( min-width: 300px)
+@media(min-width:300px)
 {
   .stats-counter .stats-item p {
-    display: inline;
-  }
+    display:block;
 }
-
+}
 
 /*--------------------------------------------------------------
 # Our Team Section
@@ -1840,7 +1825,7 @@ section {
 }
 
 .recent-blog-posts .post-item .post-title {
-  font-size: 28px;
+  font-size: 24px;
   color: var(--color-secondary);
   font-weight: 700;
   transition: 0.3s;
@@ -1902,9 +1887,6 @@ section {
   position: relative;
 }
 
-.hero p {
-  font-size: 0.5rem; /* Adjust the font size for smaller screens */
-}
 .hero .carousel-item {
   position: absolute;
   inset: 0;
@@ -1929,11 +1911,17 @@ section {
   z-index: 2;
 }
 
+@media (max-width: 768px) {
+  .hero .info {
+    padding: 0 50px;
+  }
+}
+
 .hero .info h2 {
   color: #fff;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 4rem;
+  font-size: 56px;
   font-weight: 700;
   position: relative;
 }
@@ -1951,29 +1939,31 @@ section {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  .hero .info h2, p {
+    display: none;
+  }
+}
+
 @media (max-width: 1280px) {
-  .hero .info h2 {
-    font-size: 36px;
-  }
-  .hero .info h2, p, a {
-    display: none;
+  .hero .info h2{
+    font-size: 32px;
   }
 }
 
-.hero .info .disappear{font-size:16px;}
-
-@media (max-width: 768px)
-{
-  .hero .info .disappear
-  {
-    display: none;
-  }
-}
 
 .hero .info p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 18px;
+  font-size: 20px;
+  position: relative;
 }
+
+@media (max-width: 1280px) {
+  .hero .info p{
+    font-size: 14px;
+  }
+}
+
 
 .hero .info .btn-get-started {
   font-family: var(--font-primary);
@@ -2112,7 +2102,7 @@ section {
 }
 
 .blog .posts-list .post-title {
-  font-size: 28px;
+  font-size: 24px;
   color: var(--color-secondary);
   font-weight: 700;
   transition: 0.3s;
@@ -2167,16 +2157,28 @@ section {
 --------------------------------------------------------------*/
 .blog .blog-details {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.blog h3 {
+  color:#d5d7da
 }
 
 .blog .blog-details .post-img {
-  margin: -30px -30px 20px -30px;
+  margin: -30px -30px 30px -30px;
   overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
 .blog .blog-details .title {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   padding: 0;
   margin: 20px 0 0 0;
@@ -2625,7 +2627,7 @@ section {
   background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
-  padding: 0 0 60px 0;
+  padding: 40px 0 60px 0;
   position: relative;
 }
 
@@ -2637,8 +2639,7 @@ section {
 }
 
 .footer .footer-content .footer-info {
-  margin-top:50px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .footer .footer-content .footer-info h3 {
@@ -2689,8 +2690,7 @@ section {
 }
 
 .footer .footer-content .footer-links {
-  margin-top:50px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .footer .footer-content .footer-links ul {
