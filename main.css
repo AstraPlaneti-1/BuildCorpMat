@@ -706,6 +706,7 @@ section {
   background: #fff;
   position: relative;
   border-radius: 0;
+  margin-bottom:20px;
 }
 
 .constructions .card-item .card-bg {
@@ -713,7 +714,8 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-height: 100%;
+  max-height: 80%;
+  width:100%;
 }
 
 .constructions .card-item .card-body {
@@ -805,6 +807,112 @@ section {
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+.features1 .nav-tabs {
+  border: 0;
+}
+
+.features1 .nav-link {
+  padding: 15px 0;
+  transition: 0.3s;
+  color: var(--color-secondary);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  border-bottom: 4px solid #e2e4e6;
+}
+
+.features1 .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.features1 .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .features1 .nav-link h4 {
+    font-size: 16px;
+  }
+  .features1 .tab-content img{
+    height: 200px;
+    width: 200px;
+    float: left;
+  }
+}
+
+.features1 .nav-link:hover {
+  color: var(--color-primary);
+}
+
+.features1 .nav-link.active {
+  color: var(--color-primary);
+  background-color: transparent;
+  border-color: var(--color-primary);
+}
+
+.features1 .tab-content {
+  margin-top: 30px;
+}
+
+.features1 .tab-pane h3 {
+  font-weight: 700;
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 700px) {
+  .features1 .tab-pane h3{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .features1 .tab-pane h3{
+    font-size: 24px;
+  }
+}
+
+.features1 .tab-pane h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-primary);
+  left: 0;
+  bottom: 0;
+}
+
+.features1 .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features1 .tab-pane ul li {
+  padding-top: 10px;
+}
+
+.features1 .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--color-primary);
+}
+
+.features1 .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------------------- OTHER FEATURES SECTION ---------------------------------
+
+*/
 .features .nav-tabs {
   border: 0;
 }
@@ -1318,6 +1426,13 @@ section {
   font-size: 14px;
 }
 
+@media(min-width:300px)
+{
+  .stats-counter .stats-item p {
+    display:block;
+}
+}
+
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
@@ -1811,7 +1926,7 @@ section {
 }
 
 .recent-blog-posts .post-item .post-content {
-  padding: 15px;
+  padding: 30px;
 }
 
 .recent-blog-posts .post-item .post-title {
@@ -1909,9 +2024,10 @@ section {
 
 .hero .info h2 {
   color: #fff;
+  padding-top: 20px;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 700;
   position: relative;
 }
@@ -1930,15 +2046,41 @@ section {
 }
 
 @media (max-width: 768px) {
-  .hero .info h2 {
-    font-size: 36px;
+  .hero .info h2, p {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero .info h2{
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero .info h2{
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero .info p{
+    font-size: 12px;
   }
 }
 
 .hero .info p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
+  position: relative;
 }
+
+@media (max-width: 1280px) {
+  .hero .info p{
+    font-size: 14px;
+  }
+}
+
 
 .hero .info .btn-get-started {
   font-family: var(--font-primary);
@@ -2144,12 +2286,12 @@ section {
 }
 
 .blog .blog-details .post-img {
-  margin: -30px -30px 20px -30px;
+  margin: -30px -30px 30px -30px;
+  overflow: hidden;
   max-width: 100%;
   height: auto;
-  display: block; /* This eliminates extra space below the image */
+  display: block;
   margin: auto;
-  overflow: hidden;
 }
 
 .blog .blog-details .title {
