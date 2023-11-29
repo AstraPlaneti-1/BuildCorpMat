@@ -32,6 +32,89 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.custom-list1 {
+  list-style: none;
+  padding: 0;
+}
+
+  .custom-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .custom-list li {
+    margin-bottom: 10px; /* Adjust as needed */
+    position: relative;
+  }
+
+  .custom-list li::before {
+    content: "\2022"; /* Unicode character for the dot */
+    color: #4e4f55; /* Change the color as needed */
+    font-size: 1.7em; /* Adjust the size as needed */
+    display: inline-block;
+    width: 2.5em;
+    position: absolute;
+    left: -0.7em;
+    top: -0.1em; 
+  }
+
+.custom-list1 li {
+  position: relative;
+  padding-left: 2.5em;
+  margin-bottom: 10px; 
+}
+
+
+.custom-list1 li i.bi-1-circle {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 2.5em;
+  position: absolute;
+  left: -1.3em; 
+  top: 0em;
+}
+
+.custom-list1 li i.bi-2-circle {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 2.5em;
+  position: absolute;
+  left: -1.3em;
+  top: 0.1em;
+}
+
+.custom-list1 li i.bi-3-circle {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 2.5em;
+  position: absolute;
+  left: -1.3em; 
+  top: 0.1em;
+}
+
+.custom-list1 li i.bi-4-circle {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 2.5em;
+  position: absolute;
+  left: -1.3em;
+  top: 0.1em;
+}
+
+.custom-list1 li i.bi-5-circle {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 2.5em;
+  position: absolute;
+  left: -1.3em; 
+  top: 0.1em;
+}
+
 body {
   font-family: var(--font-default);
   color: var(--color-default);
@@ -760,6 +843,25 @@ section {
   margin-bottom: 15px;
   color: var(--color-secondary);
 }
+.constructions .card-item1 h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+}
+.constructions .card-item2 h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+}
+.constructions .card-item3 h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+}
+
 
 .constructions .card-item p {
   color: var(--color-secondary);
