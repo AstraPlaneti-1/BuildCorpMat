@@ -36,10 +36,9 @@ $mail->Body = "name:" . $name .  "\n" . "email: " . $email . "\n" . "Telefon:" .
 
 $mail->send();
 
-echo "
-    <script>
-    alert('Sent');
-    document.location.href = 'contact.html'
-    </script>
-    ";
+if($mail->send()){
+    $succes = "Mesajul a fost transmis cu succes!";
+} else{
+    $failed = "A aparut o eroare! Va rugam sa reveniti mai tarziu";
+}
 ?>
