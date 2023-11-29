@@ -710,12 +710,44 @@ section {
 }
 
 .constructions .card-item .card-bg {
-  min-height: 270px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-height: 80%;
-  width:100%;
+  height:auto;
+}
+
+@media(max-width: 1222px)
+{
+  .constructions .card-item3 img{
+    margin-top: 30px;
+  }
+}
+
+@media(max-width: 1300px)
+{
+  .constructions .card-item1{
+    margin-top: 38px;
+  }
+}
+
+.constructions .card-item1 img{
+  width:220px;
+  height:220px;
+}
+
+.constructions .card-item img{
+  width:250px;
+  height:250px;
+}
+
+.constructions .card-item3 img{
+  width:235px;
+  height:235px;
+}
+
+.constructions .card-item2 img{
+  width:275px;
+  height:275px;
 }
 
 .constructions .card-item .card-body {
@@ -807,112 +839,6 @@ section {
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
-.features1 .nav-tabs {
-  border: 0;
-}
-
-.features1 .nav-link {
-  padding: 15px 0;
-  transition: 0.3s;
-  color: var(--color-secondary);
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  height: 100%;
-  border: 0;
-  border-bottom: 4px solid #e2e4e6;
-}
-
-.features1 .nav-link i {
-  padding-right: 15px;
-  font-size: 48px;
-}
-
-.features1 .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-}
-
-@media (max-width: 700px) {
-  .features1 .nav-link h4 {
-    font-size: 16px;
-  }
-  .features1 .tab-content img{
-    height: 200px;
-    width: 200px;
-    float: left;
-  }
-}
-
-.features1 .nav-link:hover {
-  color: var(--color-primary);
-}
-
-.features1 .nav-link.active {
-  color: var(--color-primary);
-  background-color: transparent;
-  border-color: var(--color-primary);
-}
-
-.features1 .tab-content {
-  margin-top: 30px;
-}
-
-.features1 .tab-pane h3 {
-  font-weight: 700;
-  font-size: 32px;
-  position: relative;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-@media (max-width: 700px) {
-  .features1 .tab-pane h3{
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 700px) {
-  .features1 .tab-pane h3{
-    font-size: 24px;
-  }
-}
-
-.features1 .tab-pane h3:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--color-primary);
-  left: 0;
-  bottom: 0;
-}
-
-.features1 .tab-pane ul {
-  list-style: none;
-  padding: 0;
-}
-
-.features1 .tab-pane ul li {
-  padding-top: 10px;
-}
-
-.features1 .tab-pane ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: var(--color-primary);
-}
-
-.features1 .tab-pane p:last-child {
-  margin-bottom: 0;
-}
-
-/* ---------------------------- OTHER FEATURES SECTION ---------------------------------
-
-*/
 .features .nav-tabs {
   border: 0;
 }
@@ -2024,10 +1950,9 @@ section {
 
 .hero .info h2 {
   color: #fff;
-  padding-top: 20px;
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 50px;
+  font-size: 56px;
   font-weight: 700;
   position: relative;
 }
@@ -2057,21 +1982,10 @@ section {
   }
 }
 
-@media (max-width: 800px) {
-  .hero .info h2{
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 800px) {
-  .hero .info p{
-    font-size: 12px;
-  }
-}
 
 .hero .info p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 }
 
