@@ -760,6 +760,25 @@ section {
   margin-bottom: 15px;
   color: var(--color-secondary);
 }
+.constructions .card-item1 h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+}
+.constructions .card-item2 h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+}
+.constructions .card-item3 h4 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--color-secondary);
+}
+
 
 .constructions .card-item p {
   color: var(--color-secondary);
