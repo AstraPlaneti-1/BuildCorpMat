@@ -1852,6 +1852,17 @@ section {
   margin-bottom: 0;
 }
 
+@media(max-width: 720px)
+{
+  .contact .info-item p {
+    padding: 0;
+    line-height: 16px;
+    font-size: 12px;
+    margin-bottom: 0;
+    display: block;
+  }
+}
+
 .contact .php-email-form {
   width: 100%;
   background: #fff;
@@ -2831,6 +2842,18 @@ section {
 .footer .footer-content .social-links a:hover {
   background: var(--color-primary);
   text-decoration: none;
+}
+
+.footer .utile
+{
+  text-align:end;
+}
+
+@media(max-width: 700px)
+{
+  .footer .utile{
+    text-align: center;
+  }
 }
 
 .footer .footer-content h4 {
