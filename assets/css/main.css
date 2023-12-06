@@ -2844,14 +2844,14 @@ section {
   text-decoration: none;
 }
 
-.footer .utile
+.footer .footer-links
 {
   text-align:end;
 }
 
 @media(max-width: 700px)
 {
-  .footer .utile{
+  .footer .footer-links{
     text-align: center;
   }
 }
