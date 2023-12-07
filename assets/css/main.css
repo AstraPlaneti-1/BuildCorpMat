@@ -358,7 +358,7 @@ section {
 --------------------------------------------------------------*/
 .header {
   z-index: 997;
-  position: absolute;
+  /* position: absolute; */
   padding: 15px 0;
   top: 0;
   left: 0;
@@ -437,7 +437,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-primary);
+    background-color:white;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -491,7 +491,7 @@ section {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: var(--color-primary);
+    color:white;
   }
 
   .navbar .dropdown:hover>ul {
@@ -546,7 +546,9 @@ section {
     transition: 0.3s;
     z-index: 9997;
   }
-
+  .navtitle{
+    display: none;
+  }
   .navbar ul {
     position: absolute;
     inset: 0;
@@ -2233,7 +2235,7 @@ section {
 
 .blog .blog-pagination li.active a,
 .blog .blog-pagination li:hover a {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 /*--------------------------------------------------------------
