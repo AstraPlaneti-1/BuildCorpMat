@@ -64,6 +64,27 @@
   margin-bottom: 10px; 
 }
 
+.custom-list2 li {
+  position: relative;
+  padding-left: 2.5em;
+  margin-bottom: 1px; 
+}
+
+.custom-list2 {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list2 li i.bi-check-circle {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 2.5em;
+  position: absolute;
+  left: -1.3em; 
+  top: 0em;
+}
+
 
 .custom-list1 li i.bi-1-circle {
   position: absolute;
